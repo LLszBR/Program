@@ -1,0 +1,12 @@
+open class Employee
+
+class  Manager : Employee()
+
+class  Vicepresident : Employee()
+
+class  Company<T : Employee>(val employe : T)
+
+fun main() {
+    val data1 = Company(Manager())
+    val data2 = Company(Vicepresident())
+}
